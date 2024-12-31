@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+<welcome-file-list>
+<welcome-file>AdminLogin.jsp</welcome-file>
+</welcome-file-list>
+   <servlet>
+        <servlet-name>checkAdmin</servlet-name>
+        <servlet-class>com.varshini.checkAdmin</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>checkAdmin</servlet-name>
+        <url-pattern>/checkAdmin</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AddCustomer</servlet-name>
+        <servlet-class>com.varshini.AddCustomer</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>AddCustomer</servlet-name>
+        <url-pattern>/AddCustomer</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    <servlet-name>AddCategory</servlet-name>
+    <servlet-class>com.varshini.AddCategory</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AddCategory</servlet-name>
+    <url-pattern>/AddCategory</url-pattern>
+</servlet-mapping>
+
+    <servlet>
+    <servlet-name>AddProducts</servlet-name>
+    <servlet-class>com.varshini.AddProducts</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AddProducts</servlet-name>
+    <url-pattern>/AddProducts</url-pattern>
+</servlet-mapping>
+       <servlet>
+    <servlet-name>ReloadProducts</servlet-name>
+    <servlet-class>com.varshini.ReloadProducts</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ReloadProducts</servlet-name>
+    <url-pattern>/ReloadProducts</url-pattern>
+</servlet-mapping>
+    <servlet>
+    <servlet-name>BuyProduct</servlet-name>
+    <servlet-class>com.varshini.BuyProduct</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>BuyProduct</servlet-name>
+    <url-pattern>/BuyProduct</url-pattern>
+</servlet-mapping>
+    <servlet>
+    <servlet-name>UpdateCart</servlet-name>
+    <servlet-class>com.varshini.UpdateCart</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>UpdateCart</servlet-name>
+    <url-pattern>/UpdateCart</url-pattern>
+</servlet-mapping>
+   <servlet>
+    <servlet-name>CashPayment</servlet-name>
+    <servlet-class>com.varshini.CashPayment</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>CashPayment</servlet-name>
+    <url-pattern>/CashPayment</url-pattern>
+</servlet-mapping>
+</web-app>
+
+
